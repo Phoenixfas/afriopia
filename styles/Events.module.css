@@ -1,0 +1,229 @@
+.events{
+    min-height: 100vh;
+    position: relative;
+    animation: in .5s linear;
+    background-color: #050752;
+}
+@keyframes in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* 
+#050752 dark blue
+#4eaee5 aqua
+#78e0f4 light blue
+*/
+.hero__container{
+  position: absolute;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  z-index: 1;
+  background: linear-gradient(to top, #000000ee, #00000000, #000000ee);
+}
+.hero__container h1{
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #fff;
+    text-align: center;
+}
+.hero__info{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.hero__icon{
+    display: flex;
+    align-items: center;
+}
+.hero__icon p{
+    margin: 0;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+.hero__btn{
+    margin-top: 30px;
+    padding: 8px 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: .3s;
+    border: 2px solid #4eaee5;
+    cursor: pointer;
+}
+.hero__btn:hover{
+    background-color: #4eaee5;
+    color: #fff;
+    transition: .3s;
+}
+
+.embla {
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    /* filter: brightness(70%); */
+  }
+  .embla__container {
+    height: 100%;
+    display: flex;
+  }
+  .embla__slide {
+    width: 100%;
+    height: 100%;
+    flex: 0 0 100%;
+    position: relative;
+}
+.embla__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: grab;
+  }
+
+
+  /* /////////////////////////////// */
+  .upcoming{
+    position: relative;
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+  }
+  .upcoming h1> span{
+    /* background: linear-gradient(to bottom right, #F0453D 17%, #2D236A 100%);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent; */
+    color: #4eaee5;
+  }
+
+
+  .events__holder{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  .event__card{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .event__card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .event__container{
+    background: linear-gradient(to bottom , #78e0f4 10%, #4eaee5 30%, #050752 80%);
+    border-radius: 10px;
+    border-top: 3px solid #78e0f4;
+    width: 90%;
+    transform: translateY(-40px);
+    padding: 20px;
+    /* box-shadow: 0 0 30px #2D236A; */
+  }
+  .event__title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+  }
+  .event__catDat{
+    display: flex;
+    align-items: center;
+  }
+  .event__category{
+    padding: 5px 20px;
+    background-color: #050752;
+    color: #fff;
+    border-radius: 50px;
+    margin-right: 20px;
+  }
+  .event__date{
+    display: flex;
+    align-items: center;
+  }
+  .event__date p{
+    font-size: 12px;
+    color: #fff;
+    margin-left: 10px;
+  }
+  .event__desc{
+    font-size: 12px;
+    color: #fff;
+  }
+  .event__info{
+    display: flex;
+  }
+  .event__icon{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .event__icon p{
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+
+
+
+
+
+/*////////////// @media queries ////////////////*/ 
+
+
+@media only screen and (max-width: 599px){
+  .hero__info{
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .hero__container{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .embla{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .event__card{
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+  .hero__info{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .events__holder{
+    padding: 0 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+  .hero__info{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .events__holder{
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,221 @@
+.payment{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #dddd19 10%, #489b42 40%, #0b5b05 100%);
+    animation: in .5s linear;
+    position: relative;
+}
+@keyframes in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.p__moduleHolder{
+    width: 800px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #ffffff99;
+    margin: 150px 0 100px;
+}
+.p__moduleHolder > h2{
+    color: #0b5b05;
+    font-size: 2rem;
+    margin-top: 0;
+}
+.p__module{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.p__moduleLeft{
+    flex: 0.5;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.p__moduleLeft__title h3{
+    color: #888;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.p__moduleLeft__course{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #0b5b05;
+    color: #fff;
+}
+.p__moduleLeft__course h4{
+    margin: 0;
+    font-size: 1.3rem;
+}
+.p__moduleLeft__course p{
+    margin: 0;
+    font-size: 1rem;
+}
+.p__moduleRight{
+    flex: 1;
+}
+.p__moduleRight__title h1{
+    font-size: 2rem;
+    color: #0b5b05;
+    margin-bottom: 0;
+}
+.p__moduleRight__form{
+    
+}
+.p__moduleRight__form__group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.p__moduleRight__form label{
+    font-size: 1.2rem;
+    color: #0b5b05;
+}
+.p__moduleRight__form input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 50px;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #444;
+}
+.amount{
+    background-color: #eee;
+    color: #aaa;
+    cursor: not-allowed;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.p__moduleRight__form__group button{
+    width: fit-content;
+    min-height: 50px;
+    padding: 10px 20px;
+    /* margin-top: 10px; */
+    background-color: #0b5b05;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.p__moduleRight__form__group button:hover{
+    background-color: #489b42;
+    color: #fff;
+    transition: .3s;
+}
+
+.success{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #dddd19 10%, #489b42 40%, #0b5b05 100%);
+}
+.success_container{
+    width: 450px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.success_container h1{
+    font-size: 2.5rem;
+    color: #0b5b05;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: #0b5b05 4px solid;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.spinner_container{
+    width: 50px; 
+    height: 50px; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%;
+    translate: -50% -50%; 
+    background-color: #dddd19; 
+    border-radius: 10px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center
+}
+.spinner{
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    border: 5px solid #0b5b05; 
+    border-left: transparent solid 5px;
+    animation: spin .5s linear infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+/*////////////// @media queries ////////////////*/
+
+@media only screen and (max-width: 599px) {
+    .p__moduleHolder{
+        width: 90%;
+        /* height: fit-content */
+    }
+    .p__module{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .p__moduleHolder{
+        width: 90%;
+        /* height: fit-content */
+    }
+    .p__module{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+
+}

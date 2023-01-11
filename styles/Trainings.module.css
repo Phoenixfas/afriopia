@@ -1,0 +1,225 @@
+.trainings{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0b5b05;
+    animation: in .5s linear;
+    position: relative;
+}
+@keyframes in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.trainings__gapG{
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    padding: 0 100px;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #dddd19 10%, #489b42 40%, #0b5b05 100%);
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    overflow: hidden;
+    transition: .5s;
+    margin-bottom: 50px;
+}
+.trainings__gapG > h1{
+    font-size: 3rem;
+    color: #fff;
+    animation: h1 1s ease-in-out;
+    z-index: 1;
+}
+@keyframes h1{
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.trainingRow{
+    position: relative;
+    padding: 50px 0;
+    display: flex;
+    width: 90%;
+    border-radius: 20px;
+    /* background-color: #fff; */
+    margin-bottom: 50px;
+    background: linear-gradient(to top left, #dddd19 10%, #489b42 40%, #0b5b05 100%);
+}
+.blue{
+    /* background-color: #2D236A; */
+    background: linear-gradient(to top right, #dddd19 10%, #489b42 40%, #0b5b05 100%);
+}
+.trainingRow__left{
+    flex: 1;
+    margin: 30px 50px;
+}
+.trainingRow__list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.trainingRow__item{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px 5px;
+    padding: 3px 10px;
+    background-color: #fff;
+    color: #0b5b05;
+    box-shadow: 0 0 10px #00000099;
+    transition: .5s;
+}
+.trainingRow__item:hover{
+    background-color: #0b5b05;
+    color: #fff;
+    transition: .5s;
+}
+.itemIcon{
+    padding: 3px;
+    background-color: #0b5b05;
+    color: #fff;
+    border-radius: 3px;
+    transition: .5s;
+    min-width: 20px;
+}
+.trainingRow__item:hover .itemIcon{
+    background-color: #fff;
+    color: #0b5b05;
+    transition: .5s;
+}
+.trainingRow__item p {
+    margin-left: 10px;
+}
+.trainingRow__right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trainingRow__right img{
+    width: 250px !important;
+    height: 250px !important;
+    /* filter: hue-rotate(-180deg); */
+    border-radius: 10px;
+    /* background-color: #fff !important; */
+}
+
+
+.trainingRow__left_r{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trainingRow__left_r img{
+    width: 250px !important;
+    height: 250px !important;
+    /* filter: hue-rotate(-180deg); */
+    border-radius: 10px;
+    /* background-color: #fff !important; */
+}
+.trainingRow__right_r{
+    flex: 1;
+    margin: 30px 50px;
+}
+.trainingRow__btn{
+    max-width: 515px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.trainingRow__btn p{
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #dddd19;
+    border: #0b5b05 1px solid;
+    color: #000;
+    box-shadow: 0 0 5px #00000099;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.trainingRow__btn p:hover{
+    box-shadow: 0 0 20px #000000aa;
+    scale: 1.1;
+    transition: .3s;
+}
+.trainingRow__btn p > em{
+    margin-left: 10px;
+    background-color: #489b42;
+    border-radius: 20px;
+    color: #dddd19;
+    font-size: 1rem;
+    font-style: normal;
+    padding: 5px 10px;
+}
+
+
+
+/*////////////// @media queries ////////////////*/ 
+
+
+@media only screen and (max-width: 599px){
+    .trainings__gapG{
+        padding: 0 20px;
+        text-align: center;
+        height: 30vh;
+        justify-content: flex-end;
+    }
+    .trainings__gapG h1{
+        font-size: 2rem;
+    }
+    .trainingRow{
+        flex-direction: column;
+    }
+    .blue{
+        flex-direction: column-reverse;
+    }
+    .trainingRow__list{
+        flex-wrap: wrap;
+    }
+    .trainingRow__left h2, .trainingRow__right_r h2{
+        text-align: center;
+    }
+    .trainingRow__right img{
+        width: 150px !important;
+        height: 150px !important;
+    }
+    .trainingRow__left_r img{
+        width: 150px !important;
+        height: 150px !important;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .trainings__gapG{
+        height: 40vh;
+    }
+    .trainingRow{
+        flex-direction: column;
+    }
+    .blue{
+        flex-direction: column-reverse;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+
+}

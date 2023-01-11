@@ -1,0 +1,32 @@
+{
+  "name": "afriopia",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "@emailjs/browser": "^3.7.0",
+    "@react-google-maps/api": "^2.12.2",
+    "axios": "^1.2.1",
+    "chapa-nodejs": "^1.2.0",
+    "embla-carousel-autoplay": "^7.0.3",
+    "embla-carousel-react": "^7.0.3",
+    "framer-motion": "^7.2.1",
+    "graphql": "^16.6.0",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "react-particles": "^2.3.1",
+    "tsparticles": "^2.2.4"
+  },
+  "devDependencies": {
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5"
+  }
+}
