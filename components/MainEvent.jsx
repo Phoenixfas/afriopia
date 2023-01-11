@@ -4,6 +4,8 @@ import Autoplay from 'embla-carousel-autoplay'
 import Image from "next/future/image"
 import style from "../styles/Events.module.css"
 
+
+
 export default function MainEvent() {
     const options = { delay: 5000 } // Options
     const autoplayRoot = (emblaRoot) => emblaRoot.parentElement // Root node
@@ -21,6 +23,9 @@ export default function MainEvent() {
     <div className={style.embla} ref={emblaRef}>
         <div className={style.embla__container}>
             <div className={style.embla__slide}>
+                <div className={style.hero__container}>
+                    <h1>EXPERIENCE THE BIGGEST TECH TRADE SHOW LIKE NEVER BEFORE</h1>
+                </div>
                 <Image
                     src={"/images/events/events-hero1.webp"}
                     alt="team"
@@ -32,6 +37,9 @@ export default function MainEvent() {
                 />
             </div>
             <div className={style.embla__slide}>
+                <div className={style.hero__container}>
+                    <h1>FIRST-EVER TECH TRADE SHOW IN ETHIOPIA</h1>
+                </div>
                 <Image
                     src={"/images/events/events-hero2.jpg"}
                     alt="team"
@@ -43,6 +51,9 @@ export default function MainEvent() {
                 />
             </div>
             <div className={style.embla__slide}>
+                <div className={style.hero__container}>
+                    <h1>THE ULTIMATE WAY FOR YOUR BUSINESS AT THE BIGGEST TECH TRADE SHOW</h1>
+                </div>
                 <Image
                     src={"/images/events/events-hero3.jpg"}
                     alt="team"

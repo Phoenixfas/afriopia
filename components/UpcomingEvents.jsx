@@ -8,7 +8,7 @@ import events from "../data/events";
 export default function UpcomingEvents() {
   return (
     <div className={style.upcoming}>
-        <h1>Features of the <span>Event</span></h1>
+        <h1>Featuring in the <span>Event</span></h1>
 
         <div className={style.events__holder}>
 
@@ -28,9 +28,9 @@ export default function UpcomingEvents() {
                             <div className={style.event__icon}>
                                 <MdLocationPin size={30} color={"#4eaee5"} /> <p>{event.location}</p>
                             </div>
-                            <div className={style.event__icon}>
+                            {/* <div className={style.event__icon}>
                                 <GiMoneyStack size={30} color={"#4eaee5"} /> <p>{event.fee}</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
