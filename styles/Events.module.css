@@ -158,6 +158,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: #fff; */
   }
   .event__card img{
     width: 100%;
@@ -168,10 +169,13 @@
   .event__container{
     background: linear-gradient(to bottom , #78e0f4 10%, #4eaee5 30%, #050752 80%);
     border-radius: 10px;
-    border-top: 3px solid #78e0f4;
+    /* border-top: 3px solid #78e0f4; */
     width: 90%;
     transform: translateY(-40px);
     padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
     /* box-shadow: 0 0 30px #2D236A; */
   }
   .event__title{
@@ -207,6 +211,8 @@
   .event__info{
     display: flex;
     justify-content: center;
+    flex-grow: 1;
+    align-items: flex-end;
   }
   .event__icon{
     display: flex;
@@ -222,11 +228,13 @@
 
 .whyvisit{
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin-top: 80px;
   position: relative;
-  background-color: #fff;
-  color: #050752;
+  /* background-color: #fff; */
+  color: #fff;
 }
 .whyvisit_l{
   width: 50%;
@@ -246,11 +254,13 @@
   object-fit: cover;
 }
 .whyvisit_r{
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 0 50px;
+  text-align: center;
 }
 .whyvisit_r h1{
   margin-top: 0;
@@ -356,65 +366,20 @@
   }
   
   /* ////////////////////////////////////////////////////////////////////////////////// */
-
-  /* /////////////////////////////////// Partners ///////////////////////////////////// */
-
-  .partners{
-    position: relative;
-    width: 80%;
-    /* background-color: #4eaee5; */
-    margin: 0 auto;
-    padding: 50px 20px 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .partners h1{
-    margin: 0;
-    margin-bottom: 50px;
-    width: 100%;
-    text-align: center;
-    font-size: 2.5rem;
-  }
-  .partners_container{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 50px;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 20px;
-  }
-  .partner{
-    position: relative;
-    width: 100px;
-    height: 70px;
-    overflow: hidden;
-    transition: .3s ease-in-out;
-  }
-  .partner img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: .3s ease-in-out;
-  }
-
-  /* ////////////////////////////////////////////////////////////////////////////////// */
-
+  
   /* //////////////////////////////////// Speakers //////////////////////////////////// */
-
-.speakers{
-  position: relative;
+  
+  .speakers{
+    position: relative;
   width: 100%;
-  background-color: #fff;
+  /* background-color: #fff; */
   margin: 100px auto;
   /* border-radius: 20px; */
   padding: 50px 20px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #050752;
+  color: #fff;
 }
 .speakers h1{
   margin: 0;
@@ -422,7 +387,7 @@
   width: fit-content;
   text-align: center;
   font-size: 2.5rem;
-  border-bottom: #050752 solid 3px;
+  /* border-bottom: #fff solid 3px; */
 }
 .speakers__container{
   width: 80%;
@@ -448,7 +413,7 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: #fff;
+  background-color: #050752;
   border-radius: 20px;
 }
 .speaker img{
@@ -485,11 +450,57 @@
 }
 .speaker:hover{
   transform: scale(1.1) translateY(-20px);
-  box-shadow: 0 0 20px 10px #05075255;
+  box-shadow: 0 0 20px 10px #ffffff55;
 }
 .speaker:hover .speaker__social{
   transform: translateY(100%);
+  background-color: #fff;
 }
+
+/* ////////////////////////////////////////////////////////////////////////////////// */
+
+  /* /////////////////////////////////// Partners ///////////////////////////////////// */
+
+  .partners{
+    position: relative;
+    width: 80%;
+    /* background-color: #4eaee5; */
+    margin: 0 auto;
+    padding: 50px 20px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .partners h1{
+    margin: 0;
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .partners_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 30px;
+    /* background-color: #fff; */
+    border-radius: 20px;
+  }
+  .partner{
+    position: relative;
+    width: 100px;
+    height: 70px;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+  }
+  .partner img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: .3s ease-in-out;
+  }
 
   /* ////////////////////////////////////////////////////////////////////////////////// */
 

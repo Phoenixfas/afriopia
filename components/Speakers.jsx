@@ -20,17 +20,17 @@ export default function Speakers() {
                     <div className={style.speaker__social}>
                         <Link href={speaker.socials.facebook} passHref>
                             <a target="_blank" rel="noopener noreferrer">
-                                <FaFacebook size={25} color={"#fff"} />
+                                <FaFacebook size={25} color={"#050752"} />
                             </a>
                         </Link>
                         <Link href={speaker.socials.linkedin} passHref>
                             <a target="_blank" rel="noopener noreferrer">
-                                <FaLinkedin size={25} color={"#fff"} />
+                                <FaLinkedin size={25} color={"#050752"} />
                             </a>
                         </Link>
                         <Link href={speaker.socials.twitter} passHref>
                             <a target="_blank" rel="noopener noreferrer">
-                                <FaTwitter size={25} color={"#fff"} />
+                                <FaTwitter size={25} color={"#050752"} />
                             </a>
                         </Link>
                     </div>
