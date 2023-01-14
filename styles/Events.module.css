@@ -49,6 +49,7 @@
     margin: 0;
     margin-left: 10px;
     font-size: 1.2rem;
+    text-align: center;
 }
 .hero__btn{
     margin-top: 30px;
@@ -91,10 +92,15 @@
     object-fit: cover;
     cursor: grab;
   }
+
+
 /* /////////////////////////////////////////////////////// */
+
+
 .title__container{
   position: absolute;
-  height: 70vh;
+  /* height: 70vh; */
+  margin-top: 120px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -176,6 +182,7 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     /* box-shadow: 0 0 30px #2D236A; */
   }
   .event__title{
@@ -506,6 +513,78 @@
 
 
 
+  /* ///////////////////////////////// EventFeature Page ///////////////////////////////////////// */
+
+.eventFeatures{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #050752;
+  margin: 0;
+}
+.eventFeatures_hero{
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.eventFeatures_hero img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+.eventFeatures_title{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  padding: 0 20px;
+}
+.eventFeatures_title h1{
+  margin: 0;
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+}
+.eventFeatures_content{
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  gap: 50px;
+}
+.eventFeatures_content_l{
+  flex: 1;
+}
+.eventFeatures_content_l p{
+  word-spacing: 3px;
+  line-height: 1.5rem;
+}
+.eventFeatures_content_r{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.eventFeatures_content_r img{
+  width: 150px;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+  /* ///////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
 /*////////////// @media queries ////////////////*/ 
 
 
@@ -516,6 +595,17 @@
     gap: 10px;
   }
   .hero__container{
+    padding: 0 30px;
+  }
+  .hero__container h1{
+    font-size: 1.2rem;
+  }
+  .title__container{
+    padding: 0 20px;
+  }
+  .title__container h1{
+    font-size: 2.2rem;
+    line-height: 2.5rem;
   }
   .embla{
     border-bottom-left-radius: 30px;
@@ -523,6 +613,18 @@
   }
   .event__card{
     width: 90%;
+  }
+  .whyvisit_r{
+    width: 100%;
+    font-size: .8rem;
+    padding: 0 30px;
+  }
+  .upcoming h1{
+    padding: 0 30px;
+    text-align: center;
+  }
+  .eventFeatures_content{
+    flex-direction: column-reverse;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px){
@@ -533,6 +635,12 @@
   .events__holder{
     padding: 0 10px;
   }
+  .whyvisit_r{
+    width: 90%;
+  }
+  .eventFeatures_content{
+    flex-direction: column-reverse;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1000px){
   .hero__info{
@@ -541,5 +649,8 @@
   }
   .events__holder{
     padding: 0 10px;
+  }
+  .whyvisit_r{
+    width: 80%;
   }
 }

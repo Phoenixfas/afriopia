@@ -1,15 +1,12 @@
-import MainEvent from "../components/MainEvent";
-import style from "../styles/Events.module.css";
-import { BsCalendarEvent, BsMap } from "react-icons/bs";
-import { MdLocationPin } from "react-icons/md";
-import UpcomingEvents from "../components/UpcomingEvents";
-import ParticlesBackground from "../components/ParticlesBackground";
-import Link from "next/link";
-import WhyVisit from "../components/WhyVisit";
-import Location from "../components/Location";
-import Features from "../components/Features";
-import Partners from "../components/Partners";
-import Speakers from "../components/Speakers";
+import MainEvent from "../../components/MainEvent";
+import style from "../../styles/Events.module.css";
+import UpcomingEvents from "../../components/UpcomingEvents";
+import ParticlesBackground from "../../components/ParticlesBackground";
+import WhyVisit from "../../components/WhyVisit";
+import Location from "../../components/Location";
+import Features from "../../components/Features";
+import Partners from "../../components/Partners";
+import Speakers from "../../components/Speakers";
 import Head from "next/head";
 
 export default function events() {

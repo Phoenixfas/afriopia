@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 export default function Footer() {
   const route = useRouter().pathname;
   return (
-    <div className={style.footer} style={route === "/events" ? {backgroundColor: "#050752"} : {}}>
+    <div className={style.footer} style={route.includes("/events") || route==="/book-a-stand" ? {backgroundColor: "#050752"} : {}}>
       <div className={`${style.footer_con} ${style.footer__logo}`}>
         <Image src="/images/Logo.svg" alt="Logo" width={60} height={60} />
         <p>Afriopia Unified Systems.</p>

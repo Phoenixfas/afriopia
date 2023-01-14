@@ -3,6 +3,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import Image from "next/future/image"
 import style from "../styles/Events.module.css"
+import Link from 'next/link'
 
 
 
@@ -25,6 +26,9 @@ export default function MainEvent() {
             <div className={style.embla__slide}>
                 <div className={style.hero__container}>
                     <h1>EXPERIENCE THE BIGGEST TECH TRADE SHOW LIKE NEVER BEFORE</h1>
+                    <Link href="/book-a-stand"> 
+                        <a className={style.hero__btn}>Book a Stand</a>
+                    </Link>
                 </div>
                 <Image
                     src={"/images/events/events-hero1.webp"}
@@ -39,6 +43,9 @@ export default function MainEvent() {
             <div className={style.embla__slide}>
                 <div className={style.hero__container}>
                     <h1>FIRST-EVER TECH TRADE SHOW IN ETHIOPIA</h1>
+                    <Link href="/book-a-stand"> 
+                        <a className={style.hero__btn}>Book a Stand</a>
+                    </Link>
                 </div>
                 <Image
                     src={"/images/events/events-hero2.jpg"}
@@ -53,6 +60,9 @@ export default function MainEvent() {
             <div className={style.embla__slide}>
                 <div className={style.hero__container}>
                     <h1>THE ULTIMATE WAY FOR YOUR BUSINESS AT THE BIGGEST TECH TRADE SHOW</h1>
+                    <Link href="/book-a-stand"> 
+                        <a className={style.hero__btn}>Book a Stand</a>
+                    </Link>
                 </div>
                 <Image
                     src={"/images/events/events-hero3.jpg"}

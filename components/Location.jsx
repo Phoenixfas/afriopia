@@ -12,7 +12,7 @@ export default function Location() {
                 <div className={style.hero__info}>
                     <div className={style.hero__icon}>
                         <BsCalendarEvent size={30} color={"#78e0f4"} />
-                        <p>Feb 10-12, 2023</p>
+                        <p>Mar 10-12, 2023</p>
                     </div>
                     <div className={style.hero__icon}>
                         <MdLocationPin size={30} color={"#78e0f4"} /> <p>Addis Ababa</p>
