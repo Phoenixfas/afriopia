@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function UpcomingEvents() {
   return (
     <div className={style.upcoming}>
-        <h1>Featuring in the <span>Event</span></h1>
+        <h1>Features of the <span>Event</span></h1>
 
         <div className={style.events__holder}>
 
