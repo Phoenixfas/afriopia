@@ -15,7 +15,7 @@ export default function bookingSuccess() {
         <ParticlesBackground color={"#78e0f4"} amount={40} />
         <div className={style.booking_success}>
             <p>
-                Booking Successfull, we have sent you an email with the details of your booking, and how to pay for it. Make sure to check your spam folder if you don't see it in your inbox.
+                Booking Successfull, we have sent you an email with the details of your booking, and how to pay for it. Make sure to check your spam folder if you don&apos;t see it in your inbox.
             </p>
         </div>
     </div>
