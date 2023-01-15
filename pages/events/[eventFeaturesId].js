@@ -1,4 +1,5 @@
 import EventFeatureView from "../../components/EventFeatureView"
+import Head from "next/head"
 
 export default function eventFeaturesId() {
    return (
