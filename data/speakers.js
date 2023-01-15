@@ -5,9 +5,9 @@ const speakers = [
         name: 'Nael Hailemariam',
         title: 'CEO and Co-founder at chapa',
         socials: {
-            facebook: "https://www.facebook.com/",
+            facebook: "https://www.facebook.com/Naelbest/",
             linkedin: "https://www.linkedin.com/in/naelatchapa",
-            twitter: "https://www.twitter.com/",
+            twitter: "https://twitter.com/nael4best",
         }
     },
     {
@@ -17,7 +17,29 @@ const speakers = [
         title: 'Process Engineer at Tesla',
         socials: {
             facebook: "https://www.facebook.com/",
-            linkedin: "https://www.linkedin.com/",
+            linkedin: "https://www.linkedin.com/in/dr-fitsum-feyissa-45949443/",
+            twitter: "https://twitter.com/fitsum79725186",
+        }
+    },
+    {
+        id: 3,
+        image: '/images/events/speakers/wuavf.png',
+        name: 'Yang',
+        title: 'Vice Secretary General of World UAV Federation',
+        socials: {
+            facebook: "https://www.facebook.com/WUAVF/",
+            linkedin: "https://www.linkedin.com/company/wuavf/",
+            twitter: "https://twitter.com/wuavf",
+        }
+    },
+    {
+        id: 4,
+        image: '/images/events/speakers/simon.jpg',
+        name: 'Simon see',
+        title: 'Global Head Nvidia',
+        socials: {
+            facebook: "https://www.facebook.com/",
+            linkedin: "https://www.linkedin.com/in/simonsee/",
             twitter: "https://www.twitter.com/",
         }
     },

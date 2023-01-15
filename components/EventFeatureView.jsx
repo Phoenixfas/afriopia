@@ -37,7 +37,7 @@ export default function EventFeatureView() {
 const EventFeature = ( { feature } ) => {
     return (
         <div className={style.eventFeatures}>
-            <ParticlesBackground color={"#78e0f4"} amount={40} />
+            <ParticlesBackground color={"#78e0f4"} amount={20} />
             <div className={style.eventFeatures_hero}>
                 <div className={style.eventFeatures_title}>
                     <h1>{feature?.name}</h1>

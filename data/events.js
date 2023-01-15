@@ -30,16 +30,6 @@ const events = [
     fee: "--",
     includes: [
       {
-        id: "1",
-        name: "Google Analytics",
-        image: "/images/events/tracks/includes/google-analytics.png",
-      },
-      {
-        id: "2",
-        name: "Google earth",
-        image: "/images/events/tracks/includes/google-earth.png",
-      },
-      {
         id: "3",
         name: "Flutter",
         image: "/images/events/tracks/includes/flutter.png",
