@@ -25,6 +25,9 @@ export default function MainEvent() {
         <div className={style.embla__container}>
             <div className={style.embla__slide}>
                 <div className={style.hero__container}>
+                    <div className={style.title__container}>
+                        <h1>Tech Trade Show</h1>
+                    </div>
                     <h1>EXPERIENCE THE BIGGEST TECH TRADE SHOW LIKE NEVER BEFORE</h1>
                     <Link href="/book-a-stand"> 
                         <a className={style.hero__btn}>Book a Stand</a>
@@ -42,6 +45,9 @@ export default function MainEvent() {
             </div>
             <div className={style.embla__slide}>
                 <div className={style.hero__container}>
+                    <div className={style.title__container}>
+                        <h1>Tech Trade Show</h1>
+                    </div>
                     <h1>FIRST-EVER TECH TRADE SHOW IN ETHIOPIA</h1>
                     <Link href="/book-a-stand"> 
                         <a className={style.hero__btn}>Book a Stand</a>
@@ -59,6 +65,9 @@ export default function MainEvent() {
             </div>
             <div className={style.embla__slide}>
                 <div className={style.hero__container}>
+                    <div className={style.title__container}>
+                        <h1>Tech Trade Show</h1>
+                    </div>
                     <h1>THE ULTIMATE WAY FOR YOUR BUSINESS AT THE BIGGEST TECH TRADE SHOW</h1>
                     <Link href="/book-a-stand"> 
                         <a className={style.hero__btn}>Book a Stand</a>

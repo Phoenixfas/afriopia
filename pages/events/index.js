@@ -18,9 +18,7 @@ export default function events() {
         <link rel="icon" href="/images/events/Logo.svg" />
       </Head>
       <ParticlesBackground color={"#78e0f4"} amount={20} />
-      <div className={style.title__container}>
-        <h1>Tech Trade Show</h1>
-      </div>
+     
 
       <MainEvent />
       <Location />
