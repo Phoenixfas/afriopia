@@ -8,6 +8,7 @@ import Features from "../../components/Features";
 import Partners from "../../components/Partners";
 import Speakers from "../../components/Speakers";
 import Head from "next/head";
+import Panelists from "../../components/Panelists";
 
 export default function events() {
   return (
@@ -25,6 +26,7 @@ export default function events() {
       <WhyVisit />
       {/* <Features /> */}
       <Speakers />
+      <Panelists />
       <UpcomingEvents />
       <Partners />
     </div>
