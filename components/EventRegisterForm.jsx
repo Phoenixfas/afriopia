@@ -48,7 +48,7 @@ export default function EventRegisterForm({event, route}) {
                 setError(data.error);
                 return;
             }
-            window.location.href = '/booking-success';
+            window.location.href = '/register-success';
             
         } catch (err) {
             console.error(err);

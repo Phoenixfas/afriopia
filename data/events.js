@@ -8,6 +8,10 @@ const events = [
     desc: "Hackathon is an event where people come together to work on and build software projects within a specific niche under the constraint of several hours.",
     location: "Ethiopian Science Museum",
     fee: "--",
+    register: {
+      route: "hackathon",
+      name: "Hackathon",
+    },
     includes: [
       
     ],
@@ -79,6 +83,10 @@ const events = [
     desc: "LAN party is where interested gamers come together to play video games and compete for great prizes.",
     location: "Ethiopian Science Museum",
     fee: "--",
+    register: {
+      route: "lanparty",
+      name: "LAN Party",
+    },
     includes: [
       
     ],
@@ -97,6 +105,10 @@ const events = [
     desc: "Capture the flag is a contest where many teams compete to find bugs and issues in a system/sandbox, which may also include white hacking and more.",
     location: "Ethiopian Science Museum",
     fee: "--",
+    register: {
+      route: "ctf",
+      name: "Capture the Flag",
+    },
     includes: [
       
     ],
@@ -179,6 +191,10 @@ const events = [
     desc: " take your brand to the next level with our vending booths! These sleek and modern booths are perfect for showcasing your latest products and services at the biggest tech trade show in Ethiopia.",
     location: "Ethiopian Science Museum",
     fee: "--",
+    register: {
+      route: "participate",
+      name: "Exhibit",
+    },
     includes: [
       
     ],

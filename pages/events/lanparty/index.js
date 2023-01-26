@@ -5,17 +5,17 @@ import style from "../../../styles/Booking.module.css"
 import EventRegisterForm from '../../../components/EventRegisterForm';
 
 
-export default function hackathon() {
+export default function lanparty() {
   return (
     <div className={style.booking}>
         <Head>
-            <title>Afriopia | Hackathon Registration | TTS</title>
-            <meta name="description" content="Hackathon Registration Tech Trade Show" />
+            <title>Afriopia | LAN Party Registration | TTS</title>
+            <meta name="description" content="LAN Party Registration Tech Trade Show" />
             <link rel="icon" href="/images/events/Logo.svg" />
         </Head>
 
         <ParticlesBackground color={"#78e0f4"} amount={40} />
-        <EventRegisterForm event={"Hackathon"} route={"hackathon"} />
+        <EventRegisterForm event={"LAN Party"} route={"lanparty"} />
     </div>
   )
 }

@@ -3,21 +3,21 @@ import style from '../styles/Booking.module.css'
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 
-export default function BookingForm() {
+export default function ExhibitRegisterForm({event, route}) {
     const [first_name, setFirstName] = useState('');
-    const [middle_name, setMiddleName] = useState('');
     const [last_name, setLastName] = useState('');
-    const [company_name, setCompanyName] = useState('');
-    const [company_website, setCompanyWebsite] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
+    const [telegram, setTelegram] = useState('');
+    const [gender, setGender] = useState('');
 
     const [error, setError] = useState('');
 
     const onSubmit = async(e) => {
         e.preventDefault();
-        if (first_name === '' || last_name === '' || company_name === '' || email === '' || phone === '') {
+        if (first_name === '' || last_name === '' || email === '' || phone === ''|| telegram === '' || gender === '' ) {
             setError('Please fill in all required fields');
+            return;
         }
         try {
             const config = {
@@ -27,51 +27,31 @@ export default function BookingForm() {
                 },
                 body: JSON.stringify({
                     first_name,
-                    middle_name,
                     last_name,
-                    company_name,
-                    company_website,
                     email,
-                    phone
+                    phone,
+                    telegram,
+                    gender
                 })
             }
-            const res = await fetch('https://api.afriopia.com/booth-vendor', config);
+            const res = await fetch(`https://api.afriopia.com/${route}`, config);
             const data = await res.json();
-            if (res.status === 400) {
+            if (res.status !== 201) {
                 setError(data.error);
                 return;
             }
-            if (data.capacity === 'full') {
-                window.location.href = '/booking-full';
-            } else {
-                // console.log(data);
-                window.location.href = '/booking-success';
-            }
+            window.location.href = '/register-success';
+            
         } catch (err) {
             console.error(err);
         }
     }
 
-    // send a get request to the server to check if booking is full and redirect to /booking-full if it is
-    useEffect(() => {
-        const checkBooking = async() => {
-            try {
-                const res = await fetch('https://api.afriopia.com/booth/capacity');
-                const data = await res.json();
-                if (data.capacity === 'full') {
-                    window.location.href = '/booking-full';
-                }
-            } catch (err) {
-                console.error(err);
-            }
-        }
-        checkBooking();
-    }, [])
     
 
   return (
     <div className={style.bookingForm}>
-        <h1>Book A Stand</h1>
+        <h1>{event} Registration</h1>
         {error && <p style={{color: "#fff", backgroundColor: "orange", padding: "10px 20px", borderRadius: "5px", transition: .3}}>{error}</p>}
         <form onSubmit={onSubmit}>
             <div className={style.formInput}>
@@ -79,20 +59,8 @@ export default function BookingForm() {
                 <input type="text" name="first_name" id="first_name" placeholder='(Required)' required value={first_name} onChange={(e) => setFirstName(e.target.value)} />
             </div>
             <div className={style.formInput}>
-                <label htmlFor="middle_name">Middle Name</label>
-                <input type="text" name="middle_name" id="middle_name" placeholder='(Optional)' value={middle_name} onChange={(e) => setMiddleName(e.target.value)} />
-            </div>
-            <div className={style.formInput}>
                 <label htmlFor="last_name">Last Name*</label>
                 <input type="text" name="last_name" id="last_name" placeholder='(Required)' required value={last_name} onChange={(e) => setLastName(e.target.value)} />
-            </div>
-            <div className={style.formInput}>
-                <label htmlFor="company_name">Company Name*</label>
-                <input type="text" name="company_name" id="company_name" placeholder='(Required)' required value={company_name} onChange={(e) => setCompanyName(e.target.value)} />
-            </div>
-            <div className={style.formInput}>
-                <label htmlFor="company_website">Company Website</label>
-                <input type="text" name="company_website" id="company_website" placeholder='(Optional)' value={company_website} onChange={(e) => setCompanyWebsite(e.target.value)} />
             </div>
             <div className={style.formInput}>
                 <label htmlFor="email">Email*</label>
@@ -102,8 +70,21 @@ export default function BookingForm() {
                 <label htmlFor="phone">Phone*</label>
                 <PhoneInput type="tel" name="phone" id="phone" placeholder='(Required)' required value={phone} onChange={setPhone} />
             </div>
+            <div className={style.formInput}>
+                <label htmlFor="telegram">Telegram username*</label>
+                <input type="text" name="telegram" id="telegram" required placeholder='(Required) Please dont include @ symbol' value={telegram} onChange={(e) => setTelegram(e.target.value)} />
+            </div>
+            <div className={style.formInputS}>
+                <label htmlFor="gender">Gender*</label>
+                <select name="gender" id="gender" placeholder='(Required)' required value={gender} onChange={(e) => setGender(e.target.value)} >
+                    <option>choose</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+            </div>
+            
             <div className={style.formSubmit}>
-                <button type="submit">Book</button>
+                <button type="submit">Register</button>
             </div>
         </form>
     </div>

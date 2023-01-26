@@ -218,9 +218,10 @@
   }
   .event__info{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     flex-grow: 1;
-    align-items: flex-end;
   }
   .event__icon{
     display: flex;
@@ -228,6 +229,22 @@
     margin-right: 20px;
   }
   .event__icon p{
+    margin-left: 5px;
+    font-size: 12px;
+  }
+  .event__iconB{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #4eaee5;
+    padding: 0px 10px;
+    border-radius: 50px;
+    transition: .3s;
+  }
+  .event__iconB:hover{
+    background-color: #78e0f4;
+  }
+  .event__iconB p{
     margin-left: 5px;
     font-size: 12px;
   }
@@ -272,6 +289,28 @@
 }
 .whyvisit_r h1{
   margin-top: 0;
+}
+.whyvisit_b{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  margin-top: 50px;
+  gap: 50px;
+}
+.whyvisit_b a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #050752;
+  transition: .3s;
+}
+.whyvisit_b a:hover{
+  background-color: #78e0f4;
 }
   /* ////////////////////////////////////////////////////////////////////////////////// */
   

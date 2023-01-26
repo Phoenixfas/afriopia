@@ -3,6 +3,7 @@ import Image from "next/future/image"
 import { BsCalendarEvent } from "react-icons/bs";
 import { GiMoneyStack } from "react-icons/gi";
 import { MdLocationPin } from "react-icons/md";
+import { IoEnter } from "react-icons/io5";
 import events from "../data/events";
 import Link from "next/link";
 
@@ -30,6 +31,13 @@ export default function UpcomingEvents() {
                                 <div className={style.event__icon}>
                                     <MdLocationPin size={30} color={"#4eaee5"} /> <p>{event.location}</p>
                                 </div>
+                                {event.register && (
+                                    <Link href={`/events/${event.register.route}`}>
+                                        <div className={style.event__iconB}>
+                                            <IoEnter size={30} color={"#050752"} /> <p>Register Now</p>
+                                        </div>
+                                    </Link>
+                                )}
                                 {/* <div className={style.event__icon}>
                                     <GiMoneyStack size={30} color={"#4eaee5"} /> <p>{event.fee}</p>
                                 </div> */}
