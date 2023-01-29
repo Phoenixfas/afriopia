@@ -11,11 +11,12 @@ export default function Speakers() {
         <h1>Speakers</h1>
         <div className={style.speakers__container}>
             {speakers.map(speaker => (
-                <div key={speaker.id} className={style.speaker}>
+                <div key={speaker.id} className={`${style.speaker} ${speaker.keynote && style.keynote}`}>
                     <div className={style.speaker__content}>
                         <Image src={speaker.image} alt="speaker" width={200} height={200} quality={100} priority unoptimized={true} />
                         <p className={style.speaker__name}>{speaker.name}</p>
                         <p className={style.speaker__title}>{speaker.title}</p>
+                        {speaker.keynote && <p style={{textAlign: "center", color: "#FFD700", fontWeight: "bold"}}>Keynote</p> }
                     </div>
                     <div className={style.speaker__social}>
                         <Link href={speaker.socials.facebook} passHref>

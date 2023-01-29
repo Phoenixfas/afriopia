@@ -503,6 +503,14 @@
   transform: translateY(100%);
   background-color: #fff;
 }
+.speaker.keynote:hover{
+  transform: scale(1.1) translateY(-20px);
+  box-shadow: 0 0 20px 10px #FFD700;
+}
+.speaker.keynote:hover .speaker__social{
+  transform: translateY(100%);
+  background-color: #FFD700;
+}
 
 /* ////////////////////////////////////////////////////////////////////////////////// */
 

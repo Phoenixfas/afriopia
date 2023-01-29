@@ -15,6 +15,7 @@ const speakers = [
         image: '/images/events/speakers/fitsum.jpg',
         name: 'Dr. Fitsum Feyissa',
         title: 'Process Engineer at Tesla',
+        keynote: false,
         socials: {
             facebook: "https://www.facebook.com/",
             linkedin: "https://www.linkedin.com/in/dr-fitsum-feyissa-45949443/",
@@ -26,6 +27,7 @@ const speakers = [
         image: '/images/events/speakers/wuavf.png',
         name: 'Yang',
         title: 'Vice Secretary General of World UAV Federation',
+        keynote: false,
         socials: {
             facebook: "https://www.facebook.com/WUAVF/",
             linkedin: "https://www.linkedin.com/company/wuavf/",
@@ -37,6 +39,7 @@ const speakers = [
         image: '/images/events/speakers/simon.jpg',
         name: 'Simon see',
         title: 'Global Head Nvidia',
+        keynote: true,
         socials: {
             facebook: "https://www.facebook.com/",
             linkedin: "https://www.linkedin.com/in/simonsee/",

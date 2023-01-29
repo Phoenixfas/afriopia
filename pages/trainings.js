@@ -1,8 +1,8 @@
 import Head from "next/head";
 import ParticlesBackground from "../components/ParticlesBackground";
-// import ServiceRow from "../components/ServiceRow";
 import style from "../styles/Trainings.module.css";
 import TrainingRow from "../components/TrainingRow";
+import Instructors from "../components/Instructors";
 
 export default function trainings() {
   return (
@@ -22,17 +22,12 @@ export default function trainings() {
         </h1>
       </div>
       <TrainingRow />
-      {/* <ServiceRow /> */}
+      <h1>Our Certified Instructors</h1>
+      <div className={style.ourTeam__holder} id="team-holder">
+          <Instructors />
+          <Instructors />
+          <Instructors />
+        </div>
     </div>
   );
 }
-
-// visp
-// saas
-// stream
-// web
-// mobile
-// network installa
-// trainin
-
-// yordanos-finance

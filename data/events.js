@@ -32,6 +32,10 @@ const events = [
     desc: "Workshop is an intensive space at which a group of people engage in technical hands-on practices on a particular subject or project.",
     location: "Ethiopian Science Museum",
     fee: "--",
+    register: {
+      route: "workshop",
+      name: "Workshop",
+    },
     includes: [
       {
         id: "3",

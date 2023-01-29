@@ -17,6 +17,12 @@ const partners = [
         logo: '/images/events/partners/gdg.png',
         url: 'https://gdg.community.dev/'
     },
+    {
+        id: 4,
+        name: 'Ministry of Innovation and Technology',
+        logo: '/images/events/partners/mint.png',
+        url: 'https://mint.gov.et/?lang=en'
+    },
 ]
 
 export default partners

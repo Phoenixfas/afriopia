@@ -9,6 +9,7 @@ import Partners from "../../components/Partners";
 import Speakers from "../../components/Speakers";
 import Head from "next/head";
 import Panelists from "../../components/Panelists";
+import Sponsors from "../../components/Sponsors";
 
 export default function events() {
   return (
@@ -29,6 +30,7 @@ export default function events() {
       <Panelists />
       <UpcomingEvents />
       <Partners />
+      <Sponsors />
     </div>
   );
 }

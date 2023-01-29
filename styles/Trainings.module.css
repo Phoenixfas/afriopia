@@ -6,6 +6,7 @@
     background-color: #0b5b05;
     animation: in .5s linear;
     position: relative;
+    margin-bottom: 50px;
 }
 @keyframes in{
     0%{
@@ -171,6 +172,135 @@
     font-size: 1rem;
     font-style: normal;
     padding: 5px 10px;
+}
+
+
+
+
+
+
+/*////////////// ourTeam ////////////////*/
+.ourTeam__holder{
+    background-color: #0b5b0588;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 50px 0 0;
+    display: flex;
+    position: relative;
+    gap: 30px;
+    padding: 20px 0;
+}
+.ourTeam__holder::-webkit-scrollbar{
+    /* height: 5px;
+    background: transparent; */
+    display: none;
+}
+.ourTeam__holder::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: #dddd19;
+}
+.ourTeam__holder::-webkit-scrollbar-track{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+.team__container{
+    display: flex;
+    /* align-items: center; */
+    gap: 30px;
+    /* margin-right: 30px; */
+    animation: slide 15s linear infinite;
+    /* animation: teamcardanim 4s ease-in; */
+}
+@keyframes slide{
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(-1400px);
+    }
+}
+
+
+.team__card{
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 0 15px #000000bb;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 30px;
+}
+.team__card:hover .team__cardName{
+    border-radius: 10px;
+    transition: .5s;
+}
+
+
+/* @keyframes teamcardanim{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+} */
+.team__cardTop{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team__cardBottom{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.team__card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* border: #F0453D55 5px solid; */
+    object-fit: cover;
+    transition: .5s;
+}
+
+.team__card:hover img{
+    /* border: #dddd19 5px solid; */
+}
+.team__cardName{
+    margin: 30px 20px 0;
+    padding: 5px 30px;
+    border-radius: 50px;
+    color: #fff;
+    background: linear-gradient(to top right, #dddd19 10%, #489b42 60%, #0b5b05 100%);
+    box-shadow: 0 0 15px #00000088;
+    transition: .5s;
+}
+.team__cardName p{
+    margin: 0;
+    text-align: center;
+}
+.team__cardName span{
+    font-weight: 700;
+}
+.team__socials{
+    display: flex;
+    color: #888;
+    margin-top: 10px;
+}
+.team__icon{
+    margin: 10px;
+    cursor: pointer;
 }
 
 
