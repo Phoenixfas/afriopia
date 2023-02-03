@@ -4,7 +4,7 @@ import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import activityFormFields from '../data/activityFormFields'
 
-export default function EventRegisterForm({event, route}) {
+export default function EventRegisterForm({activity, route}) {
     const [first_name, setFirstName] = useState('');
     const [last_name, setLastName] = useState('');
     const [email, setEmail] = useState('');
@@ -127,7 +127,8 @@ export default function EventRegisterForm({event, route}) {
     
 
   return (
-    <div className={style.bookingForm}>
+    <div className={`${style.bookingForm} ${style.busi}`}>
+        <h1>{activity.button ? activity.button : "Register Now"}</h1>
         {error && <p style={{color: "#fff", backgroundColor: "red", padding: "10px 20px", borderRadius: "5px", transition: .3}}>{error}</p>}
         {msg && <p style={{color: "#fff", backgroundColor: "orange", padding: "10px 20px", borderRadius: "5px", transition: .3}}>{msg}</p>}
         <form onSubmit={onSubmit}>

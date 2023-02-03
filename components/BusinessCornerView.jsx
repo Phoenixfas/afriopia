@@ -51,8 +51,8 @@ export default function BusinessCornerView() {
                         <li><span>Participants Expected: </span> {participants?.startups ? <ul><br /><span>Startups: </span> {participants.startups} <br /> <span>Corporates: </span>{participants.corporates}</ul> : participants?.other}</li>
                     </ul>
                 </div>
+                <BusinessCornerForm activity={activity} route={order} />
             </div>
-            <BusinessCornerForm  route={order} />
     </div>
   )
 }
