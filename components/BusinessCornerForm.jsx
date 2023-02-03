@@ -66,7 +66,7 @@ export default function EventRegisterForm({activity, route}) {
             const img = document.getElementById("pitchdeck").files[0]
             const imgData = new FormData()
             imgData.append('file', img)
-            imgData.append('upload_preset', 'afriopia')
+            imgData.append('upload_preset', 'pitchdeck')
 
             const res = await fetch('https://api.cloudinary.com/v1_1/drp73bqti/image/upload', {
                 method: 'POST',
