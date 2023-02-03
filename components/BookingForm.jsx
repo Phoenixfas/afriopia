@@ -45,7 +45,7 @@ export default function BookingForm() {
                 window.location.href = '/booking-full';
             } else {
                 // console.log(data);
-                window.location.href = '/booking-success';
+                window.location.href = data.payment_url;
             }
         } catch (err) {
             console.error(err);
