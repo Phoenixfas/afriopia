@@ -19,7 +19,7 @@ export default function events() {
         <meta name="description" content="Tech Trade Show" />
         <link rel="icon" href="/images/events/Logo.svg" />
       </Head>
-      <ParticlesBackground color={"#78e0f4"} amount={20} />
+      <ParticlesBackground color={"#78e0f4"} amount={10} />
      
 
       <MainEvent />
@@ -30,7 +30,7 @@ export default function events() {
       <Panelists />
       <UpcomingEvents />
       <Partners />
-      <Sponsors />
+      {/* <Sponsors /> */}
     </div>
   );
 }

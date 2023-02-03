@@ -59,13 +59,25 @@
     justify-content: flex-end;
     /* background-color: yellow; */
 }
+.formInputT p{
+    color: #aaa;
+    font-size: .8rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.formInputT .hNote label{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
 .formInput label, .formInputS label, .formInputT label{
     color: #fff;
     font-size: 1.2rem;
     font-weight: 300;
     margin-bottom: 10px;
 }
-.formInput input{
+.formInput input, .formInputS input, .formInputT input{
     padding: 10px;
     border: #fff 1px solid;
     border-radius: 5px;

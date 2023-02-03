@@ -17,7 +17,7 @@ export default function UpcomingEvents() {
             {events.map(event => (
                 <div key={event.id} className={style.event__card}>
                     <Image src={event.image} alt="team" width={300} height={400} quality={100} priority unoptimized={true} />
-                    <Link href={`/events/${event.id}`}>
+                    <Link href={`/events/${event.id !== "3" ? event.id : "business-corner"}`}>
                         <div className={style.event__container}>
                             <p className={style.event__title}>{event.name}</p>
                             <div className={style.event__catDat}>

@@ -1,0 +1,57 @@
+const fields = [
+    {
+        order: "1",
+        first_name: true,
+        last_name: true,
+        email: true,
+        phone: true,
+        startup_sector: true,
+        startup_highlight: true,
+    },
+    {
+        order: "2",
+        first_name: true,
+        last_name: true,
+        email: true,
+        phone: true,
+        startup_sector: true,
+        startup_highlight: true,
+    },
+    {
+        order: "3R1",
+        first_name: true,
+        last_name: true,
+        email: true,
+        phone: true,
+        pitchdeck: true,
+    },
+    {
+        order: "3R2",
+        first_name: true,
+        last_name: true,
+        email: true,
+        phone: true,
+        company: true,
+        position: true,
+    },
+    {
+        order: "5",
+        first_name: true,
+        last_name: true,
+        email: true,
+        phone: true,
+        company: true,
+        position: true,
+    },
+    {
+        order: "6",
+        first_name: true,
+        last_name: true,
+        email: true,
+        phone: true,
+        company: true,
+        position: true,
+    },
+]
+
+export default fields

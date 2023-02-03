@@ -9,7 +9,18 @@ const panelists = [
             linkedin: "https://www.linkedin.com/in/naelatchapa",
             twitter: "https://twitter.com/nael4best",
         }
-    }
+    },
+    {
+        id: 2,
+        image: '/images/events/panelists/abenezer_bekele.jpg',
+        name: 'Abenezer Bekele',
+        title: 'CTO at santimPay',
+        socials: {
+            facebook: "https://www.facebook.com/",
+            linkedin: "https://www.linkedin.com/in/abenezer-bekele-326a01180/",
+            twitter: "https://twitter.com/",
+        }
+    },
 ]
 
 export default panelists;

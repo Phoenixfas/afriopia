@@ -70,13 +70,15 @@ const events = [
     image: "/images/events/tracks/BC.jpg",
     category: "tts",
     date: "March 10 - 12",
-    desc: "Business launch introduces new businesses, startups, tech companies and techpreneurs to the public sphere. Business launch introduces new businesses, startups, tech companies and techpreneurs to the public sphere.",
+    desc: "The TTS Business Corner is an exclusive networking and learning experience that provides attendees with the knowledge and resources they need to succeed in today's rapidly changing business landscape.",
     location: "Ethiopian Science Museum",
     fee: "--",
     includes: [
       
     ],
-    long_desc: `The Tech Trade Show Business Corner is a valuable opportunity for business owners and entrepreneurs. Attendees can take advantage of the chance to network with industry leaders and peers, connect with potential partners and clients, and gain valuable insights and tips from experts on how to leverage technology to drive business success. They'll also stay up-to-date on the latest trends and technologies that are shaping the future of business and can understand how technology can be leveraged to take their business to the next level. Additionally, the Business Corner provides an opportunity for attendees to showcase their business, products, or services to a wide range of attendees and possibly win prizes. Overall, the Business Corner is an exclusive networking and learning experience that provides attendees with the knowledge and resources they need to succeed in today's rapidly changing business landscape.`
+    long_desc: `The TTS Business Corner is an exclusive networking and learning experience that provides attendees with the knowledge and resources they need to succeed in today's rapidly changing business landscape.
+    Attendees can take advantage of the chance to network with industry leaders and peers, connect with potential partners and clients, as well as gain valuable insights, tips from experts on how to leverage technology to drive business success. 
+    `
   },
   {
     id: "4",
