@@ -39,11 +39,35 @@ const speakers = [
         image: '/images/events/speakers/simon.jpg',
         name: 'Simon see',
         title: 'Global Head Nvidia',
-        keynote: true,
+        keynote: false,
         socials: {
             facebook: "https://www.facebook.com/",
             linkedin: "https://www.linkedin.com/in/simonsee/",
             twitter: "https://www.twitter.com/",
+        }
+    },
+    {
+        id: 5,
+        image: '/images/events/speakers/frehiwot.png',
+        name: 'Frehiwot Tamiru',
+        title: 'CEO of Ethio telecom',
+        keynote: true,
+        socials: {
+            facebook: "https://www.facebook.com/ethiotelecom",
+            linkedin: "https://www.linkedin.com/company/ethio-telecom/",
+            twitter: "https://twitter.com/ethiotelecom",
+        }
+    },
+    {
+        id: 6,
+        image: '/images/events/speakers/kebour.png',
+        name: 'Kebour Ghenna',
+        title: 'Executive Director at PACCI',
+        keynote: false,
+        socials: {
+            facebook: "https://www.facebook.com/kghennadesta/",
+            linkedin: "https://www.linkedin.com/in/kebour-ghenna-02a3b2b5/",
+            twitter: "https://twitter.com/ghenna_kebour",
         }
     },
 ]

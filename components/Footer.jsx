@@ -14,7 +14,7 @@ export default function Footer() {
       </div>
       <div className={`${style.footer_con} ${style.footer__link}`}>
         <Link href="/" >Home</Link>
-        <Link href="/services" >Servives</Link>
+        <Link href="/services" >Services</Link>
         <Link href="/trainings" >Trainings</Link>
         <Link href="/prices" >Pricing</Link>
         <Link href="/events" >Events</Link>
