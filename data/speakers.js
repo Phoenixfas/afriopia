@@ -60,7 +60,7 @@ const speakers = [
     },
     {
         id: 6,
-        image: '/images/events/speakers/kebour.png',
+        image: '/images/events/speakers/kebour.jpg',
         name: 'Kebour Ghenna',
         title: 'Executive Director at PACCI',
         keynote: false,
